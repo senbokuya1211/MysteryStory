@@ -1,0 +1,406 @@
+@charset "UTF-8";
+/* header ヘッダー */
+.header{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  padding-top: 10px;
+  display: inline-block;
+}
+.logo img{
+  height: 80px;
+}
+.navi{
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+.navi ul{
+  display: flex;
+}
+.header_button{
+  border-radius: 16px;
+  margin-left: 20px;
+}
+.header_button a{
+  display: block;
+  padding: 15px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* ログイン時 */
+.header_auth{
+  background-color: #272343;
+}
+.header_auth a{
+  color: white;
+}
+/* 否ログイン時 */
+.header_guest{
+  background-color: #ffd803
+}
+.header_guest a{
+  color: #272343;
+}
+/* footer */
+footer{
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  background-color: #2d334a;
+}
+.footer_contents{
+  width: 90%;
+  margin: 0 auto;
+}
+.footer_logo{
+  text-align: right;
+  line-height: 40px;
+}
+.footer_logo a{
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* 共通 */
+.wrap{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.content{
+  width: 80%;
+  margin: 30px auto;
+}
+.container{
+  width: 60%;
+}
+.catch{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #272343;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.page{
+  margin: 20px 0;
+  text-align: center;
+  color: #272343;
+  font-weight: bold;
+}
+/* ログインページ */
+.form_background{
+  background-color: #e3f6f5;
+  border-radius: 16px;
+  padding: 30px;
+}
+.form_background form{
+  text-align:center;
+}
+.form_content{
+  margin-bottom: 20px;
+}
+.form_button{
+  background-color: #ffd803;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.form_link{
+  margin: 20px 0;
+}
+.focus{
+  border: 2px solid #ffd803;
+  background-color: #fffffe;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #272343;
+  padding: 8px 13px;
+  cursor: pointer;
+}
+.error_m{
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ff0328;
+}
+/* 公演登録フォーム */
+.stage_up_title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #272343;
+  text-align: center;
+}
+.stage_up_form{
+  width: 50%;
+  border: solid 2px #bae8e8;
+  border-radius: 15px;
+  padding: 8px;
+  resize: none;
+}
+.stage_up_date{
+  display: flex;
+  justify-content: center;
+}
+.date_content{
+  width: 30%;
+}
+/* 編集フォーム */
+.form_title{
+  width: 50%;
+  border: solid 2px #bae8e8;
+  border-radius: 15px;
+  padding: 8px;
+}
+.form_body{
+  width: 50%;
+  border: solid 2px #bae8e8;
+  border-radius: 15px;
+  padding: 8px;
+  resize: none;
+}
+.edit_comp{
+  text-align: center;
+  font-weight: bold;
+  color: #272343;
+  margin-bottom: 40px;
+  display: block;
+}
+.comp_button{
+  display: flex;
+  justify-content:space-around;
+}
+/* index */
+.main_visual{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.main_visual img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: left;
+}
+.main_text{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  bottom: 20px;
+  left: 40px;
+  position: absolute;
+}
+.mystery{
+  font-size: 5rem;
+}
+.title{
+  margin: 30px 0;
+}
+.title h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fffffe;
+  background-color: #272343;
+  padding: 5px 0;
+}
+.event_list{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:15px;
+  justify-content: center;
+}
+.event_list article{
+  margin: 5px;
+}
+.event_img{
+  margin: 0 auto;
+}
+.event_title{
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+.event_content{
+  margin-top: 10px;
+}
+.event_content li{
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+/* mypage マイページ */
+.user_card{
+  width: 50%;
+  margin: 15px auto;
+  padding: 30px 0 15px 0;
+  background-color: #e3f6f5;
+  border-radius: 15px;
+}
+.user_content{
+  margin: 10px 0;
+  text-align: center;
+  justify-content: center;
+}
+.user_content p{
+  text-align: center;
+  color: #272343;
+}
+.user_content a{
+  display: inline-block;
+}
+.button_mid{
+  width: 40%;
+}
+
+.mypage_img img{
+  max-height: 50vh;
+}
+.mypage_content{
+  width: 70%;
+}
+.mypage_content h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #272343;
+  margin-bottom: 10px;
+}
+.mypage_review{
+  width: 80%;
+  padding: 10px 20px;
+  background-color: #fffbe6;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.mypage_review .review_bottom{
+  margin-bottom: 10px;
+}
+/* stage 公演詳細 */
+.stage_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.stage_img{
+  width: 30%;
+  text-align: center;
+}
+.stage_img img{
+  width: 100%;
+  object-fit: contain;
+}
+.stage_content{
+  width: 60%;
+  margin: 0 30px;
+  text-align: center;
+}
+.stage_content h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #272343;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.stage_info{
+  margin-bottom: 10px;
+}
+.stage_description{
+  margin-left: 30px;
+}
+.link_button{
+  background-color: #bae8e8;
+  border-radius: 16px;
+  margin: 20px;
+  text-align: center;
+}
+.link_button a{
+  display: block;
+  color: #272343;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.catch_button{
+  background-color: #ffd803;
+  border-radius: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+.catch_button a{
+  display: block;
+  color: #272343;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+.stage_review{
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #fffbe6;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.stage_review p{
+  text-align: left;
+}
+
+.review_time{
+  font-size: 0.8rem;
+  color: #696969;
+}
+.review_title{
+  font-weight: bold;
+  font-size: 0.9rem
+}
+.review_top{
+  border-bottom: dashed 2px #d3d3d3;
+}
+.review_name span{
+  font-size: 0.8rem;
+}
+.review_body{
+  margin: 10px 0;
+}
+.review_body p{
+  font-size: 0.9rem;
+}
+.review_hide{
+  font-size: 0.8rem;
+  color: #ff0328;
+}
+.review_bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.review_bottom_button{
+  display: flex;
+  justify-content: center;
+}
+.review_bottom_button form{
+  margin: 0 10px;
+}
+.likes{
+  cursor: pointer;
+}
+/* icon */
+.liked {
+  color: #f25042;
+}
+.location{
+  color: #2d334a;
+}
+.calender{
+  color: #2d334a;
+}
+.up{
+  color: white;
+}
