@@ -6,9 +6,23 @@
 </section>
 <div class="wrap">
   <section class="content">
+
+    <form method="get" action="" class="serch_form">
+      @csrf
+      <div class="serch">
+        <input type="text" name="keyword" class="serch_bar" value="" placeholder="イベントタイトル">
+        <input type="submit" value="検索" class="form_button">
+      </div>
+    </form>
+
     <div class="title">
-      <h1>イベント一覧</h1>
+      <h1>イベント情報</h1>
     </div>
+    @if($contents->isEmpty())
+      <div class="serch_emp">
+        <h1>検索結果がありません！</h1>
+      </div>
+    @endif
     <div class="event_list">
       @foreach($contents as $content)
       <article>

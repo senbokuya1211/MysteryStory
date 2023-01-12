@@ -11,10 +11,18 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Pagination\Paginator;
 
 class UserController extends Controller{
-  public function index(){
-    $contents = Stage::withCount('reviews')
-    ->orderBy('updated_at','desc')
-    ->simplePaginate(8);
+  public function index(Request $rq){
+    $keyword = $rq->input('keyword');
+    if(empty($keyword)){
+      $contents = Stage::withCount('reviews')
+      ->orderBy('updated_at','desc')
+      ->simplePaginate(8);
+    }else{
+      $contents = Stage::withCount('reviews')
+      ->where('name','like','%'.$keyword.'%')
+      ->orderBy('updated_at','desc')
+      ->simplePaginate(8);
+    }
     return view('index',compact('contents'));
   }
   public function mypage(){

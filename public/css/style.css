@@ -49,7 +49,6 @@
 footer{
   width: 100%;
   height: 40px;
-  position: fixed;
   bottom: 0;
   background-color: #2d334a;
 }
@@ -90,6 +89,23 @@ footer{
   text-align: center;
   color: #272343;
   font-weight: bold;
+}
+.serch_form{
+  text-align: center;
+}
+.serch_bar{
+  width: 30%;
+  border: solid 2px #bae8e8;
+  border-radius: 15px;
+  padding: 10px;
+}
+.serch_emp{
+  margin: 100px 0;
+}
+.serch_emp h1{
+  text-align: center;
+  justify-content: center;
+  font-size: 1rem;
 }
 /* ログインページ */
 .form_background{
